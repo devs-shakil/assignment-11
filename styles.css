@@ -1,0 +1,99 @@
+/* part 2 css */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+/* css variables */
+:root{
+    --main-color:blue;
+    --heading-size:24px;
+    --container-width:80%;
+    --container-height:100vh;
+}
+
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+/* Styling for the heading */
+h1 {
+color: blue;
+font-size: 24px;
+text-align: center;
+}
+  
+/* Background color for the container div */
+.container {
+    background-color: lightgray;
+    width: 500px;
+    height: 300px;
+
+}
+  
+/* Background color for the table */
+table {
+    background-color: lightblue;
+    border-collapse: collapse;
+ }
+  
+/* Border around table cells */
+td {
+    border: 1px solid black;
+    padding: 8px;
+}
+  
+/* Hover effect for table rows */
+tbody tr:hover {
+    background-color: lightgreen;
+}
+  
+ /* Styling for the first list item */
+ul li:first-child {
+    color: red;
+    font-weight: bold;
+}
+  /* Styling for the image */
+img {
+    width: 200px;
+    height: 150px;
+}
+  
+/* Styling for specific table cells */
+tbody tr:first-child td {
+    background-color: yellow;
+}
+  
+tbody tr:last-child td {
+    background-color: pink;
+}
+  
+      /* Styling for the table header row */
+thead tr th {
+    background-color: gray;
+    color: white;
+}
+
+h1{
+    color:var(--main-color);
+    font-size: var(--heading-size);
+    text-align:center
+}
+
+.container{
+    width:var(--container-width);
+    height:var(--container-height);
+}
+
+
+
+
+
+
+/* part 3 css */
+
+ /* Styling for specific table cells */
+ tbody tr:first-child td {
+    background-color: yellow;
+  }
