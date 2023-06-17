@@ -5,7 +5,7 @@
     --main-color:blue;
     --heading-size:24px;
     --container-width:80%;
-    --container-height:100vh;
+    --container-height:100%;
 }
 
 
@@ -18,20 +18,52 @@
 }
 
 /* Styling for the heading */
-h1 {
+.container h1 {
 color: blue;
 font-size: 24px;
 text-align: center;
 }
-  
+.container p{
+    text-align: center;
+    margin:10px;
+}
+ .container-fluid{
+    background-color:rgb(170, 167, 167);
+ } 
 /* Background color for the container div */
 .container {
     background-color: lightgray;
     width: 500px;
     height: 300px;
+    margin:0 auto;
 
 }
-  
+ul{
+    display: flex;
+    align-items: center;
+    
+}
+  ul li {
+    list-style: none;
+    padding:10px 20px;
+    background-color:green;
+    margin:2px;
+    border-radius: 3px;
+
+    
+  }
+ul li:hover{
+    background-color: blue;
+}
+ul li a{
+    text-decoration: none;
+    color:white;
+}
+
+img{
+    margin:20px;
+    border-radius: 2px;
+}
 /* Background color for the table */
 table {
     background-color: lightblue;
@@ -97,3 +129,50 @@ h1{
  tbody tr:first-child td {
     background-color: yellow;
   }
+  
+/* Hover effect for table rows */
+tbody tr:hover {
+    background-color: lightgreen;
+}
+ul li:first-child {
+    color: red;
+    font-weight: bold;
+}
+
+  /* Styling for links on hover and active */
+  a:hover {
+    color: purple;
+    text-decoration: underline;
+}
+
+.container::before {
+    content: "";
+    font-style: italic;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+.container::after{
+    background-color:green;
+    color:white;
+}
+.box-model{
+    height:200px;
+    width:300px;
+    background-color: green;
+    margin:20px;
+    border-radius: 5px;
+    padding:5px;
+    position: relative;
+}
+.inner-div{
+    height:100px;
+    width:100px;
+    background-color:red;
+    border-radius: 50%;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+
+}
